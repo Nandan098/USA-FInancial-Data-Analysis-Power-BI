@@ -60,13 +60,13 @@ Auto Refresh → Published Dashboard
 <h2> Dashboard Visuals</h2>
 
 <h3>Main Overview Dashboard</h3>
-<img src="images/Screenshot3302.png" alt="Dashboard Page 1" width="100%"/>
+<img src="https://github.com/Nandan098/USA-FInancial-Data-Analysis-Power-BI/blob/main/Dashboard/Page-1.png"/>
 
 <h3>Credit Mix, Payment Behaviour, Age Analysis</h3>
-<img src="images/Screenshot3306.png" alt="Dashboard Page 2" width="100%"/>
+<img src="https://github.com/Nandan098/USA-FInancial-Data-Analysis-Power-BI/blob/main/Dashboard/Page-2.png"/>
 
 <h3>LTV, Promotions, Loan Count, Age Groups</h3>
-<img src="images/Screenshot3307.png" alt="Dashboard Page 3" width="100%"/>
+<img src="https://github.com/Nandan098/USA-FInancial-Data-Analysis-Power-BI/blob/main/Dashboard/Page-3.png"/>
 
 <p><em>Make sure to store your images in an <code>/images</code> folder and update the filenames accordingly.</em></p>
 
