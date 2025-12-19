@@ -1,92 +1,142 @@
-<h1 align="center">📊 USA Financial Data – Automated ETL & Power BI Dashboard</h1>
+<h1>🇺🇸 USA Financial Data – Automated ETL & Dashboard</h1>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Power%20BI-Data%20Visualization-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=black" />
-  <img src="https://img.shields.io/badge/Python-Automation-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power%20Automate-Workflow-0066FF?style=for-the-badge&logo=Microsoft%20Power%20Automate&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google%20Cloud%20Platform-API-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
-</p>
-
-<hr>
-
-<h2>🚀 Project Goal — <i>Automate → Consolidate → Analyze → Visualize</i></h2>
+<h2> Project Overview</h2>
 <p>
-This project automates the entire lifecycle of processing daily U.S. financial survey data.
-Over 25 files received every day via email are automatically extracted, stored in cloud, consolidated, cleaned,
-modeled and visualized in Power BI. The dashboard refreshes automatically and is published for stakeholders. 
+This project showcases a fully automated ETL pipeline and interactive dashboard built for analyzing U.S. financial survey data. The system replaces the previous manual workflow where approximately 25 daily files were emailed, downloaded, and manually processed. The new solution integrates Outlook, Power Automate, Google Drive API, Power Query, Python, and Power BI to automate data extraction, consolidation, and dashboard refresh.
 </p>
 
 <hr>
 
-<h2>🧠 Business Problem</h2>
+<h2> Problem Statement</h2>
 <ul>
-  <li>Manual file downloads & merges</li>
-  <li>Time pressure — 3 PM to 8 PM turnaround</li>
-  <li>High human errors</li>
-  <li>₹10L+ yearly cost (~$12,000/month)</li>
+  <li>Manual downloading of ~25 files daily</li>
+  <li>Strict processing deadlines (3 PM → 8 PM)</li>
+  <li>Frequent manipulation errors</li>
+  <li>Additional labor costs (~$12,000/month)</li>
+  <li>Negative impact on other project workloads</li>
 </ul>
-
-<p><strong>Solution:</strong> Full automation + Power BI analytics for error-free and fast reporting.</p>
+<p>
+The purpose of this automation was to reduce time, minimize errors, centralize processing, and improve dashboard reporting.
+</p>
 
 <hr>
 
-<h2>🛠 Tools & Technologies</h2>
+<h2>Automated Workflow Architecture</h2>
 
-<table>
-<tr><td><b>📨 Outlook</b></td><td>Receive daily files</td></tr>
-<tr><td><b>⚙ Power Automate</b></td><td>Extract & upload attachments</td></tr>
-<tr><td><b>☁ Google Cloud + Drive API</b></td><td>Authenticated file access</td></tr>
-<tr><td><b>🐍 Python</b></td><td>API integration & fetching</td></tr>
-<tr><td><b>🧹 Power Query Editor</b></td><td>Data cleaning & consolidation</td></tr>
-<tr><td><b>📊 Power BI</b></td><td>Visualizations & publishing</td></tr>
-</table>
-
-<p><strong>Skills demonstrated:</strong><br>
-Automation • ETL • API Integration • Cloud • Data Cleaning • Modeling • Visualization • Reporting</p>
-
-<hr>
-
-<h2>📷 Dashboard Overview</h2>
-
-<h3 align="center">Main Dashboard (Executive View)</h3>
-<p align="center">
-  <img src="images/Screenshot3302.png" width="85%" />
-</p>
-
-<h3 align="center">Payment Behaviour & Credit Mix Analysis</h3>
-<p align="center">
-  <img src="images/Screenshot3306.png" width="85%" />
-</p>
-
-<h3 align="center">LTV, Promotions, Loan Overview & Customers</h3>
-<p align="center">
-  <img src="images/Screenshot3307.png" width="85%" />
-</p>
-
-<p align="center"><i>(Ensure you upload screenshots to /images directory)</i></p>
+<pre>
+Email (Outlook)  
+       ↓  
+Power Automate → extract attachments  
+       ↓  
+Google Drive (cloud storage)  
+       ↓  
+Python script using Google Drive API (Google Cloud Platform)  
+       ↓  
+Consolidation in Power Query Editor  
+       ↓  
+Data Cleaning & Transformation  
+       ↓  
+Power BI Dashboard  
+       ↓  
+Auto Refresh → Published Dashboard 
+</pre>
 
 <hr>
 
-<h2>📌 Key Insights Delivered</h2>
+<h2> Tools & Technologies Used</h2>
 <ul>
-  <li>Average income, delays, utilization</li>
-  <li>Age vs credit limit change</li>
-  <li>Loan & credit card patterns by age</li>
-  <li>Payment behaviour by credit mix</li>
-  <li>Customer segmentation by age & inquiries</li>
-  <li>LTV score to drive promotion strategy</li>
+  <li><strong>Microsoft Outlook</strong> – receives data files</li>
+  <li><strong>Power Automate</strong> – extracts attachments & uploads to Google Drive</li>
+  <li><strong>Google Cloud Platform</strong> – creates API credentials</li>
+  <li><strong>Google Drive API</strong> – fetches files programmatically</li>
+  <li><strong>Python Script</strong> – retrieves files from Drive to Power BI</li>
+  <li><strong>Power Query Editor</strong> – consolidation & cleaning</li>
+  <li><strong>Power BI Desktop</strong> – dashboard creation</li>
+  <li><strong>Power BI Service</strong> – publishing & scheduled refresh</li>
 </ul>
 
 <hr>
 
-<h2>🔄 Automation Workflow</h2>
+<h2> Dashboard Visuals</h2>
+
+<h3>Main Overview Dashboard</h3>
+<img src="images/Screenshot3302.png" alt="Dashboard Page 1" width="100%"/>
+
+<h3>Credit Mix, Payment Behaviour, Age Analysis</h3>
+<img src="images/Screenshot3306.png" alt="Dashboard Page 2" width="100%"/>
+
+<h3>LTV, Promotions, Loan Count, Age Groups</h3>
+<img src="images/Screenshot3307.png" alt="Dashboard Page 3" width="100%"/>
+
+<p><em>Make sure to store your images in an <code>/images</code> folder and update the filenames accordingly.</em></p>
+
+<hr>
+
+<h2> Dashboard Capabilities</h2>
+
+<h3>Key Metrics</h3>
+<ul>
+  <li>Average annual income</li>
+  <li>Average monthly balance</li>
+  <li>Average credit utilization</li>
+  <li>Average payment delays</li>
+</ul>
+
+<h3>Insights Delivered</h3>
+<ul>
+  <li>Age vs. credit limit change relation</li>
+  <li>Payment behaviour vs credit mix</li>
+  <li>Age demographic distribution</li>
+  <li>Customer segmentation by age group</li>
+  <li>LTV score calculation & promotion mapping</li>
+  <li>Loan type distribution</li>
+  <li>Potential customers and inquiries</li>
+</ul>
+
+<h3>LTV Formula</h3>
+<pre>
+LTV = (0.3 × Average Annual Income)
+    - (0.15 × Average Delay Days)
+    + (0.4 × Average Credit Score)
+    + (0.075 × Average Amount Invested)
+    + (0.075 × Average Monthly Balance)
+</pre>
+
+<hr>
+
+<h2>Automatic Refresh & Publishing</h2>
+<ul>
+  <li>Python script connects Power BI to Google Drive API</li>
+  <li>Data refresh triggers with new survey files</li>
+  <li>Dashboard updates automatically</li>
+  <li>Published to Power BI Service for stakeholder access</li>
+</ul>
+
+<hr>
+
+<h2 Outcomes</h2>
+<ul>
+  <li>Eliminated manual processing</li>
+  <li>Reduced costs & time</li>
+  <li>Minimized human errors</li>
+  <li>Improved reporting speed</li>
+  <li>Provided actionable U.S. financial insights</li>
+</ul>
+
+<hr>
+
+
+<h2>🧩 Data Automation Flowchart</h2>
 
 ```mermaid
-flowchart LR
-    A[Outlook receives daily files] --> B[Power Automate extracts attachments]
-    B --> C[Files uploaded to Google Drive]
-    C --> D[Python retrieves via Google Drive API]
-    D --> E[Power Query cleans & merges]
-    E --> F[Power BI dashboard]
-    F --> G[Published to Power BI Service]
-    G --> H[Auto refresh enabled]
+flowchart TD
+    A[Daily Files Received in Outlook Email] --> B[Power Automate Triggers Flow]
+    B --> C[Extract Attachments Automatically]
+    C --> D[Upload Files to Google Drive]
+    D --> E[Python Script Accesses Drive via Google Drive API]
+    E --> F[Load Data into Power Query Editor]
+    F --> G[Clean, Transform & Consolidate Data]
+    G --> H[Power BI Data Model & Visualizations]
+    H --> I[Publish to Power BI Service]
+    I --> J[Scheduled/On-Demand Auto Refresh]
+    J --> K[Dashboard Updated with New Insights]
