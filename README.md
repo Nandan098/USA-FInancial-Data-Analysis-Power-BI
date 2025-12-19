@@ -68,7 +68,7 @@ Auto Refresh → Published Dashboard
 <h3>LTV, Promotions, Loan Count, Age Groups</h3>
 <img src="https://github.com/Nandan098/USA-FInancial-Data-Analysis-Power-BI/blob/main/Dashboard/Page-3.png"/>
 
-<p><em>Make sure to store your images in an <code>/images</code> folder and update the filenames accordingly.</em></p>
+
 
 <hr>
 
@@ -126,7 +126,7 @@ LTV = (0.3 × Average Annual Income)
 <hr>
 
 
-<h2>🧩 Data Automation Flowchart</h2>
+<h2> Data Automation Flowchart</h2>
 
 ```mermaid
 flowchart TD
