@@ -1,4 +1,4 @@
-<h1>🇺🇸 USA Financial Data – Automated ETL & Dashboard</h1>
+<h1> USA Financial Data – Automated ETL & Dashboard</h1>
 
 <h2> Project Overview</h2>
 <p>
